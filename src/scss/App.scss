@@ -1,0 +1,14 @@
+@import "generic/reset";
+@import "generic/normalize";
+@import "settings/fonts";
+@import "elements/hamburger";
+@import "elements/carousel";
+@import "elements/header";
+@import "elements/tracker";
+@import "elements/joinForm";
+@import "elements/Projects";
+
+body{
+  width: 100%;
+  height: 100%;
+}

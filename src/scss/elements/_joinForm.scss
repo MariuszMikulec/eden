@@ -1,0 +1,46 @@
+
+.modal-content{
+  //align-items: center;
+  .modal-header {
+    border-bottom: none;
+    .btn-close {
+     // margin-left: 80vw;
+    }
+  }
+  .title-container {
+    //width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dee2e6;
+    .form-title {
+
+      // margin-left: 3em;
+    }
+  }
+  .modal-body{
+    display: flex;
+    justify-content: center;
+   // form{
+      .row{
+        .col{
+          .form-describe{
+            padding: 0;
+          }
+        }
+      }
+  }
+  .modal-footer{
+    .submit{
+      background: #0d6efd;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 12px 6px 12px;
+      color: white;
+    }
+    .close{
+      background: dimgrey;
+      text-decoration: none;
+
+    }
+  }
+}

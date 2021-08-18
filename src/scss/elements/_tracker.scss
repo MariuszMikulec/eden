@@ -1,0 +1,22 @@
+.covid-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .tracker {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        background: indianred;
+        width: 50%;
+        align-self: center;
+        text-align: center;
+    }
+    .A{
+        border-radius: 10px 10px 0px 0px;
+        border-bottom: #232323 1px solid;
+    }
+    .B{
+        border-radius: 0px 0px 10px 10px;
+    }
+}

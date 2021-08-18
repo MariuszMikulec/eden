@@ -1,0 +1,183 @@
+html{
+  width: 100vw;
+}
+#root{
+  background: lightgreen;
+}
+/*.testowy{
+  padding: 5px;
+  background: cornflowerblue;
+  width: 30%;
+}*/
+p{
+  margin: 0;
+  padding: 1em;
+}
+.App-header{
+  background: lightslategray;
+  .nav_stripe{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 2em;
+    background: slategray;
+    .projects-edit{
+      margin: 1.5em;
+      background: greenyellow;
+      border-radius: 10px;
+      text-decoration: none;
+      display: flex;
+      align-self: center;
+      .edit-p{
+        padding: 0.5em;
+        color: black;
+        font-size: 8px;
+        text-align: center;
+        @media (width>450px) {
+          font-size: 16px;
+        }
+
+      }
+    }
+  }
+  h1{
+    font-family: $title-fonts;
+    text-align: center;
+    margin: 0.5em;
+    align-self: center;
+  }
+  .joinButton {
+    display: flex;
+    justify-content: center;
+  width: 100vw;
+    .join {
+      display: flex;
+      justify-content: center;
+      padding: 0.5em;
+      margin: 1em;
+      background: aquamarine;
+      border-radius: 40px;
+      text-decoration: none;
+      color: #232323;
+      font-family:$title-fonts ;
+      font-weight: bold;
+      font-size: 1em;
+      width: 30%;
+    }
+  }
+}
+
+.about{
+background: lightgreen;
+  div{
+    display: flex;
+    @media (width<870px) {
+      flex-direction: column-reverse
+    }
+
+    .seamus{
+    }
+    .quoteBox{
+      display: flex;
+      align-self: center;
+      .quote {
+        font-size: 40px;
+        font-family: $title-fonts;
+      }
+    }
+
+  }
+  p{}
+}
+.arrowCont {
+  background: lightgreen;
+  height: 1em;
+  .arrow {
+    display: flex;
+    justify-content: center;
+    background: lightgreen;
+
+    .scrollTopButton {
+      position: relative;
+      background: greenyellow;
+      border-radius: 360px;
+      width: 5vw;
+
+      top: -94%;
+      @media (width>400px){
+        top: -76%;
+      }
+      @media (width>901px) {
+        top: -59%;
+        width:4vw;
+      }
+      z-index: 1;
+    }
+  }
+}
+footer{
+  //position: relative;
+ // margin: 1em;
+  background: lightslategray;
+  div{
+    padding-top: 10px;
+    margin: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    @media (width<870px) {
+      flex-direction: column;
+    }
+
+    .contact {
+      flex-direction: column;
+      justify-content: center;
+      h2{
+        align-self: center;
+        font-size: 18px;
+      }
+      p {
+        align-self: center;
+      }
+    }
+    .subscribe{
+      flex-direction: column;
+      div {
+        justify-content: center;
+
+
+        input {
+          height: 2em;
+          border-radius: 10px;
+          border-style: none;
+          margin:0.2em;
+        }
+        button {
+          height: 2em;
+          border-radius: 10px;
+          border-style: none;
+          background: olivedrab;
+          margin:0.2em;
+        }
+      }
+      .socialmedia{
+        @media (width<870px) {
+          flex-direction: row;
+        }
+        a {
+          img {
+            margin: 0.5em;
+            display: flex;
+            width: 30px;
+            height: 30px;
+           // background: cornflowerblue;
+            border-radius: 36px;
+            //padding: 50px;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
