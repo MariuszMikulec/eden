@@ -2,7 +2,6 @@ import React, {Fragment, useState} from "react";
 import Covid19Counter from "./React/Covid19Counter";
 import Hamburger from "./React/Hamburger";
 import Carousel from "./React/Carousel";
-//import './scss/App.scss';
 import arrow from './pic/dooble-arrow.png'
 import seamus from './pic/Seamus_Green.jpg';
 import fb from './pic/facebook.jpg';
@@ -26,11 +25,11 @@ function LandingPage() {
        e.preventDefault();
        console.log(mail);
    }
-
+//BEM
     return (
         <Fragment>
-            <header className="App-header" id="main page">
-                <nav className="nav_stripe">
+            <header className="App-header app-header" id="main page">
+                <nav className="nav_stripe app-header__nav">
                     <a className="projects-edit" href="Projects"><p className="edit-p"><b>Edytuj Projekty</b></p></a>
                     <h1>Eden Initiative</h1>
                     <Hamburger/>
@@ -58,7 +57,6 @@ function LandingPage() {
             </section>
 
             <section className="arrowCont">
-                <img />
                 <div className="arrow">
                     <a href="#main page"> <img className="scrollTopButton" src={arrow} alt=""/></a>
                 </div>

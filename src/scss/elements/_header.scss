@@ -103,12 +103,12 @@ background: lightgreen;
       border-radius: 360px;
       width: 5vw;
 
-      top: -94%;
-      @media (width>400px){
-        top: -76%;
+      top: 0%;
+      @media (width>600px){
+        top: -21%;
       }
       @media (width>901px) {
-        top: -59%;
+        top: -19%;
         width:4vw;
       }
       z-index: 1;

@@ -1,4 +1,4 @@
-//import '../scss/App.scss'
+
 function Hamburger() {
     return (
         <nav role="navigation">

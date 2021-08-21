@@ -1,21 +1,26 @@
-import React, {Fragment} from "react";
+import React, {useState} from "react";
 import LandingPage from "./LandingPage";
 import Projects from "./React/Projects";
 import {
-  HashRouter,
   Route,
-  Link,
   Switch,
-  NavLink, BrowserRouter,
+ BrowserRouter,
 } from 'react-router-dom';
 
 function App() {
-  return (
+    //state, setState
+    const [tab, setTab] = useState([]);
+
+    return (
       <BrowserRouter>
-        <>
-          <Route exact path='/' component={LandingPage} />
-          <Route exact path='/projects' component={Projects} />
-        </>
+          <Switch>
+              <Route exact path='/'>
+                  <LandingPage tab={tab}/>
+              </Route>
+              <Route exact path='/projects'>
+                  <Projects setTab={setTab} tab={tab} />
+              </Route>
+          </Switch>
       </BrowserRouter>
   );
 }

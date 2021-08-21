@@ -1,6 +1,5 @@
 import React from "react";
 import {Carousel} from "react-bootstrap";
-//import '../scss/elements/_carousel.scss'
 import solar from '../pic/panele-słoneczne-pvgw.jpg'
 import wingTower from '../pic/wiatrtowe słupowe.jpg'
 import iter from '../pic/iter.jpg'

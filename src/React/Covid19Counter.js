@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import CountryChoseModal from "./JoinForm";
 import Modal from "react-bootstrap/Modal";
 
 
@@ -33,7 +32,7 @@ export default function Covid19Counter() {
                 console.log(data[data.length - 1]);
                 setData(data[data.length - 1])
             })
-    }, [])
+    }, )
 
     return (
         <>

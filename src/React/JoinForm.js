@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Modal from 'react-bootstrap/Modal'
-import {Button, Col, Container, Row} from "react-bootstrap";
-import Covid19Counter from "./Covid19Counter";
+import {Col, Row} from "react-bootstrap";
+
 
 
 export default function JoinForm(e) {
@@ -26,17 +26,34 @@ export default function JoinForm(e) {
     };
 
 
-
+    const data = ['name', 'age'];
+    const data2 = [{title: 'name', type: 'text'}];
     return (
         <>
             <div className="joinButton">   <a className="join" href={"#main"} onClick={joinShow}><h2>Join us!</h2></a></div>
 
-                <Modal  show={joinshow} onHide={joinHide} aria-labelledby="contained-modal-title-vcenter">
+                <Modal show={joinshow} onHide={joinHide} aria-labelledby="contained-modal-title-vcenter">
                     <Modal.Header closeButton/>
                     <div className="title-container"><h1 className="form-title">Join us!</h1></div>
                     <form onSubmit={handleSubmit}>
                     <Modal.Body className="show-grid">
                         <lavel>
+                            {data.map(el => (
+                                <Row className="row">
+                                    <Col className='col' xs={6} md={14}>
+                                        <p className="form-describe">{el}</p>
+                                        <input type="text" name={el} value={form[el]} onChange={handleChange} placeholder={el}/>
+                                    </Col>
+                                </Row>
+                            ))}
+                            {data2.map(({title, type}) => (
+                                <Row className="row">
+                                    <Col className='col' xs={6} md={14}>
+                                        <p className="form-describe">{title}</p>
+                                        <input type={type} name={title} value={form[title]} onChange={handleChange} placeholder={title}/>
+                                    </Col>
+                                </Row>
+                            ))}
                             <Row className="row">
                                 <Col className='col' xs={6} md={14}>
                                     <p className="form-describe">Imię</p>
